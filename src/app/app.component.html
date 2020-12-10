@@ -1,0 +1,118 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61At6lyZDbUewYAJfGOavYn7_YNXZzfvgTQ&usqp=CAU" alt="logo">
+        <h1>Compost</h1>
+        <h2>Multipurpose Admin</h2>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" >
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="home">
+        <ul TYPE="square">
+          <li nz-menu-item nzMatchRouter>
+            <a >Default </a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Hospital</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Sass</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Crm</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Crypto</a>
+          </li>
+        </ul>
+      </li>
+       <li nz-submenu nzOpen nzTitle="Widgets" nzIcon="mobile">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="UI-Elements" nzIcon="slack-square">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Base" nzIcon="database">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Advance" nzIcon="file-add">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Icon" nzIcon="codepen-circle">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Button" nzIcon="file-add">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Table" nzIcon="file-add">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Cards" nzIcon="file-add">
+        <ul>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Timeline" nzIcon="slack-square">
+        <ul>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout >
+    <nz-header>
+      <div class="app-header">
+        <h2>category     status        order</h2>
+      </div>
+    </nz-header>
+    <div class="def-header">
+      <h1>Default</h1>
+      <h2 >Home / Dashboard / Default</h2>
+    </div>
+
+
+    <nz-content>
+      <div class="inner-content">
+        <mat-grid-list cols="2" rowHeight="2:1" gutterSize="10px">
+          <mat-grid-tile>
+            <img src="/assets/a3.png" alt='image' layout-fill>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img src="/assets/a4.png" alt='image' layout-fill>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img class='auto' src="/assets/a1.png" alt='image' layout-fill>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img src="/assets/a2.png" alt='image' >
+          </mat-grid-tile>
+
+        </mat-grid-list>
+        <router-outlet></router-outlet>
+      </div>
+
+    </nz-content>
+
+  </nz-layout>
+</nz-layout>
